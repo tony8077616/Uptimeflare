@@ -1,11 +1,11 @@
 const pageConfig = {
   // Title for your status page
-  title: "lyc8503's Status Page",
+  title: "孟武伺服器的狀態頁",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/tony8077616', label: 'GitHub' },
+    //{ link: 'https://vault.alpha-mongwu.com', label: 'Bitwarden' },
+    { link: 'mailto:tony8077616@mongwu.onmicrosoft.com', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -19,13 +19,13 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
+      id: 'Bitwarden',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: 'Bitwarden',
       // `method` should be a valid HTTP Method
       method: 'POST',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://vault.alpha-mongwu.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
@@ -49,13 +49,13 @@ const workerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      id: 'Rustdesk',
+      name: 'Rustdesk TCP Monitor',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
+      target: 'rustdesk.alpha-mongwu.com:21117',
+      tooltip: 'Rustdesk TCP Monitor',
       statusPageLink: 'https://example.com',
       timeout: 5000,
     },
@@ -68,7 +68,7 @@ const workerConfig = {
     // if not specified, no notification will be sent
     recipientUrl: "tgram://bottoken/ChatID",
     // [Optional] timezone used in notification messages, default to "Etc/GMT"
-    timeZone: "Asia/Shanghai",
+    timeZone: "Asia/Taipei",
     // [Optional] grace period in minutes before sending a notification
     // notification will be sent only if the monitor is down for N continuous checks after the initial failure
     // if not specified, notification will be sent immediately
