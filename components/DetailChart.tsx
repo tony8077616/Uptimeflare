@@ -66,7 +66,7 @@ export default function DetailChart({
         callbacks: {
           label: (item: any) => {
             if (item.parsed.y) {
-              return `${item.parsed.y}ms (${iataToCountry(item.raw.loc)})`
+              return `${item.parsed.y}毫秒 (${iataToCountry(item.raw.loc)})`
             }
           },
         },
