@@ -33,7 +33,7 @@ export default function OverallStatus({
   } else if (state.overallUp === 0) {
     statusString = '所有系統異常運作'
   } else if (state.overallDown === 0) {
-    statusString = '所有系統正常運作All systems operational'
+    statusString = '所有系統正常運作'
     icon = <IconCircleCheck style={{ width: 64, height: 64, color: '#059669' }} />
   } else {
     statusString = `部分系統異常運作 (${state.overallDown} / ${state.overallUp + state.overallDown})`
@@ -66,7 +66,7 @@ export default function OverallStatus({
       </Title>
       <Title mt="sm" style={{ textAlign: 'center', color: '#70778c' }} order={5}>
         Last updated on:{' '}
-        {`${new Date(state.lastUpdate * 1000).toLocaleString()} (${currentTime - state.lastUpdate} sec ago)`}
+        {`${new Date(state.lastUpdate * 1000).toLocaleString()} (${currentTime - state.lastUpdate} 秒前)`}
       </Title>
     </>
   )
