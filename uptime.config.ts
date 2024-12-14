@@ -29,7 +29,7 @@ const workerConfig = {
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
+      statusPageLink: 'https://online.alpha-mongwu.com',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
@@ -56,7 +56,7 @@ const workerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: 'rustdesk.alpha-mongwu.com:21117',
       tooltip: 'Rustdesk TCP Monitor',
-      statusPageLink: 'https://example.com',
+      statusPageLink: 'https://online.alpha-mongwu.com',
       timeout: 5000,
     },
   ],
