@@ -23,7 +23,7 @@ const workerConfig = {
       // `name` is used at status page and callback message
       name: 'Bitwarden Server',
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'GET',
       // `target` is a valid URL
       target: 'https://vault.alpha-mongwu.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
