@@ -21,7 +21,7 @@ const workerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'Bitwarden',
       // `name` is used at status page and callback message
-      name: 'Bitwarden',
+      name: 'Bitwarden Server',
       // `method` should be a valid HTTP Method
       method: 'POST',
       // `target` is a valid URL
