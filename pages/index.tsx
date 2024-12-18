@@ -58,8 +58,7 @@ export default function Home({
         {state === undefined ? (
           <Center>
             <Text fw={700}>
-              Monitor State is not defined now, please check your worker&apos;s status and KV
-              binding!
+              目前未定義監視器狀態，請檢查您的 Cloudflare Worker 狀態和 KV 綁定！
             </Text>
           </Center>
         ) : (
@@ -73,19 +72,19 @@ export default function Home({
         <Text size="xs" mt="xs" mb="xs" style={{
           textAlign: 'center'
         }}>
-          Open-source monitoring and status page powered by{' '}
+          開放原始碼的監控狀態網頁，由{' '}
           <a href="https://github.com/lyc8503/UptimeFlare" target="_blank">
             Uptimeflare
           </a>{' '}
-          and{' '}
+          和 {' '}
           <a href="https://www.cloudflare.com/" target="_blank">
             Cloudflare
           </a>
-          , made with ❤ by{' '}
+          提供技術支援，來自 ❤ {' '}
           <a href="https://github.com/lyc8503" target="_blank">
             lyc8503
           </a>
-          .
+          的開發！
         </Text>
       </main>
     </>
