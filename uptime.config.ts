@@ -54,7 +54,7 @@ const workerConfig = {
       target: 'https://pds.alpha-mongwu.com',
       tooltip: 'BlueSky PDS Server',
       //statusPageLink: 'https://jellyfin.alpha-mongwu.com',
-      expectedCodes: [200],
+      //expectedCodes: [200],
       timeout: 10000,
       headers: {
         'User-Agent': 'Uptimeflare',
