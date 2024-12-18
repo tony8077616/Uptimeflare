@@ -19,8 +19,7 @@ export default function MonitorDetail({
           {monitor.name}
         </Text>
         <Text mt="sm" fw={700}>
-          No data available, please make sure you have deployed your workers with latest config and
-          check your worker status!
+          目前尚無資料，請檢查您已部署最新配置的 Cloudflare Worker 並檢查您 Cloudflare Worker 的狀態！
         </Text>
       </>
     )
