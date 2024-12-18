@@ -47,16 +47,37 @@ const workerConfig = {
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
       //checkLocationWorkerRoute: 'https://xxx.example.com',
     },
+    {
+      id: 'Jellyfin',
+      name: 'Jellyfin Server',
+      method: 'GET',
+      target: 'https://jellyfin.alpha-mongwu.com',
+      tooltip: 'Bitwarden Server',
+      statusPageLink: 'https://jellyfin.alpha-mongwu.com',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
+    },
     // Example TCP Monitor
     {
       id: 'Rustdesk',
-      name: 'Rustdesk TCP Monitor',
+      name: 'Rustdesk server',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: 'rustdesk.alpha-mongwu.com:21117',
       tooltip: 'Rustdesk TCP Monitor',
-      statusPageLink: 'https://online.alpha-mongwu.com',
+      //statusPageLink: 'https://online.alpha-mongwu.com',
+      timeout: 5000,
+    },
+    {
+      id: 'BlueSky',
+      name: 'BlueSky PDS server',
+      method: 'TCP_PING',
+      target: 'pds.alpha-mongwu.com:443',
+      tooltip: 'BlueSky PDS TCP server',
       timeout: 5000,
     },
   ],
