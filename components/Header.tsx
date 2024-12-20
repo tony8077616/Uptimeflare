@@ -21,7 +21,7 @@ export default function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
-          <a href="https://github.com/tony8077616/UptimeFlare" target="_blank">
+          <a href="https://online.alpha-mongwu.com" target="_blank">
             <Text size="xl" span>
               🕒
             </Text>
