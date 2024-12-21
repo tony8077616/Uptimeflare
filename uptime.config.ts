@@ -33,7 +33,7 @@ const workerConfig = {
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 5000,
+      timeout: 3000,
       // [OPTIONAL] headers to be sent
       headers: {
         'User-Agent': 'Uptimeflare',
@@ -55,7 +55,7 @@ const workerConfig = {
       tooltip: 'BlueSky PDS Server',
       //statusPageLink: 'https://jellyfin.alpha-mongwu.com',
       //expectedCodes: [200],
-      timeout: 5000,
+      timeout: 3000,
       headers: {
         'User-Agent': 'Uptimeflare',
       },
@@ -68,7 +68,7 @@ const workerConfig = {
       tooltip: 'Bitwarden Server',
       statusPageLink: 'https://jellyfin.alpha-mongwu.com',
       expectedCodes: [200],
-      timeout: 5000,
+      timeout: 3000,
       headers: {
         'User-Agent': 'Uptimeflare',
       },
@@ -83,7 +83,7 @@ const workerConfig = {
       target: 'rustdesk.alpha-mongwu.com:21117',
       tooltip: 'Rustdesk TCP Monitor',
       //statusPageLink: 'https://online.alpha-mongwu.com',
-      timeout: 5000,
+      timeout: 3000,
     },
   ],
   notification: {
