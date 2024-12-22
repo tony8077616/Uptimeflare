@@ -86,7 +86,7 @@ const workerConfig = {
       timeout: 3000,
     },
     {
-      id: 'Bitwarden',
+      id: 'Bitwarden TCP',
       name: 'Bitwarden Server',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
@@ -97,7 +97,7 @@ const workerConfig = {
       timeout: 3000,
     },
     {
-      id: 'BlueSky',
+      id: 'BlueSky TCP',
       name: 'BlueSky PDS',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
@@ -108,7 +108,7 @@ const workerConfig = {
       timeout: 3000,
     },
     {
-      id: 'Jellyfin',
+      id: 'Jellyfin TCP',
       name: 'Jellyfin server',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
