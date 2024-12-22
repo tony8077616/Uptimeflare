@@ -17,28 +17,28 @@ const workerConfig = {
   // Define all your monitors here
   monitors: [
     // Example HTTP Monitor
-    {
+    //{
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'Bitwarden',
+      //id: 'Bitwarden',
       // `name` is used at status page and callback message
-      name: 'Bitwarden Server',
+      //name: 'Bitwarden Server',
       // `method` should be a valid HTTP Method
-      method: 'GET',
+      //method: 'GET',
       // `target` is a valid URL
-      target: 'https://vault.alpha-mongwu.com',
+      //target: 'https://vault.alpha-mongwu.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'Bitwarden Server',
+      //tooltip: 'Bitwarden Server',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://vault.alpha-mongwu.com',
+      //statusPageLink: 'https://vault.alpha-mongwu.com',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      expectedCodes: [200],
+      //expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 3000,
+      //timeout: 3000,
       // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': 'Uptimeflare',
+      //headers: {
+        //'User-Agent': 'Uptimeflare',
         //Authorization: 'Bearer YOUR_TOKEN_HERE',
-      },
+      //},
       // [OPTIONAL] body to be sent
       //body: 'Hello, world!',
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
@@ -46,33 +46,33 @@ const workerConfig = {
       // [OPTIONAL] if specified, the check will run in your specified region,
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
       //checkLocationWorkerRoute: 'https://xxx.example.com',
-    },
-    {
-      id: 'BlueSky',
-      name: 'BlueSky PDS Server',
-      method: 'GET',
-      target: 'https://pds.alpha-mongwu.com',
-      tooltip: 'BlueSky PDS Server',
+    //},
+    //{
+      //id: 'BlueSky',
+      //name: 'BlueSky PDS Server',
+      //method: 'GET',
+      //target: 'https://pds.alpha-mongwu.com',
+      //tooltip: 'BlueSky PDS Server',
       //statusPageLink: 'https://jellyfin.alpha-mongwu.com',
       //expectedCodes: [200],
-      timeout: 3000,
-      headers: {
-        'User-Agent': 'Uptimeflare',
-      },
-    },
-    {
-      id: 'Jellyfin',
-      name: 'Jellyfin Server',
-      method: 'GET',
-      target: 'https://jellyfin.alpha-mongwu.com',
-      tooltip: 'Bitwarden Server',
-      statusPageLink: 'https://jellyfin.alpha-mongwu.com',
-      expectedCodes: [200],
-      timeout: 3000,
-      headers: {
-        'User-Agent': 'Uptimeflare',
-      },
-    },
+      //timeout: 3000,
+      //headers: {
+      //  'User-Agent': 'Uptimeflare',
+      //},
+    //},
+    //{
+      //id: 'Jellyfin',
+      //name: 'Jellyfin Server',
+      //method: 'GET',
+      //target: 'https://jellyfin.alpha-mongwu.com',
+      //tooltip: 'Bitwarden Server',
+      //statusPageLink: 'https://jellyfin.alpha-mongwu.com',
+      //expectedCodes: [200],
+      //timeout: 3000,
+      //headers: {
+        //'User-Agent': 'Uptimeflare',
+      //},
+    //},
     // Example TCP Monitor
     {
       id: 'Rustdesk',
@@ -82,6 +82,39 @@ const workerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: 'rustdesk.alpha-mongwu.com:21117',
       tooltip: 'Rustdesk TCP Monitor',
+      //statusPageLink: 'https://online.alpha-mongwu.com',
+      timeout: 3000,
+    },
+    {
+      id: 'Bitwarden',
+      name: 'Bitwarden Server',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: 'vault.alpha-mongwu.com:443',
+      tooltip: 'Bitwarden TCP Monitor',
+      statusPageLink: 'https://vault.alpha-mongwu.com',
+      timeout: 3000,
+    },
+    {
+      id: 'BlueSky',
+      name: 'BlueSky PDS',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: 'pds.alpha-mongwu.com:443',
+      tooltip: 'BlueSky PDS Monitor',
+      //statusPageLink: 'https://online.alpha-mongwu.com',
+      timeout: 3000,
+    },
+    {
+      id: 'Jellyfin',
+      name: 'Jellyfin server',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: 'jellyfin.alpha-mongwu.com:443',
+      tooltip: 'Jellyfin TCP Monitor',
       //statusPageLink: 'https://online.alpha-mongwu.com',
       timeout: 3000,
     },
